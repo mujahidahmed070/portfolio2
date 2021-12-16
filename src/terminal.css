@@ -1,0 +1,99 @@
+@font-face {
+    font-family: fira;
+    src: url('./assets/FiraCode-VF.ttf');
+}
+
+:root {
+    --back: #161B27;
+    --output: #C9DAEA;
+    --handle: #52FFB8;
+    --marker: #C51A4A;
+    --hint: #00BCF5;
+}
+
+* {
+    font-family: fira;
+    font-size: small;
+}
+
+#bottom_spacing {
+    height: 100px;
+    width: 100vw;
+    clear: both;
+}
+
+#scope {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--back);
+    background-image: url('./assets/curve.png');
+}
+
+#scroll {
+    overflow-y: scroll;
+    height: 100vh;
+    scroll-behavior: smooth;
+    padding: 20px;
+}
+
+#timeline {
+    list-style-type: none;
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+.preflow {
+    overflow-x: auto;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+}
+
+.prompt_handle {
+    color: var(--handle);
+    font-weight: bold;
+}
+
+.prompt_marker {
+    color: var(--marker);
+    font-weight: bold;
+}
+
+.output {
+    color: var(--output);
+}
+
+.command {
+    color: var(--output);
+}
+
+.hint {
+    color: var(--hint);
+}
+
+.input {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    color: #fefcfd;
+}
+
+.input:focus {
+    border: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    outline: none;
+}
+
+.form_inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
